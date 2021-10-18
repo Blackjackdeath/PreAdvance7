@@ -1,0 +1,259 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+b {
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 10px 3% 0 3%;
+}
+
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputSerch {
+  width: 50%;
+  height: 40px;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.inputSerch:focus {
+  outline: none;
+  border: 3px aqua solid;
+  -webkit-box-shadow: 0px 0px 0px 5px #c4e9e9;
+          box-shadow: 0px 0px 0px 5px #c4e9e9;
+}
+
+.clear {
+  margin-left: -3%;
+  width: 25px;
+  height: 25px;
+  margin-top: 6px;
+  margin-right: 2%;
+  opacity: 0;
+}
+
+.buttonSerch {
+  width: 50%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: green;
+  border: none;
+}
+
+.buttonSerch:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 5px #82c982;
+          box-shadow: 0px 0px 0px 5px #82c982;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 550px;
+  margin-right: 30px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 10px 3px black;
+          box-shadow: 0px 0px 10px 3px black;
+  border-radius: 3px;
+  display: none;
+}
+
+.cardImage {
+  width: 100%;
+  height: 400px;
+  border-start-start-radius: 3px;
+  border-start-end-radius: 3px;
+}
+
+.cardTitle {
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-top: -3px;
+}
+
+.cardTitle__text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card__type, .card__year {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card__Button {
+  width: 100%;
+  height: 30px;
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.card__Button:hover {
+  cursor: pointer;
+}
+
+.card__Button:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 3px #82c982;
+          box-shadow: 0px 0px 0px 3px #82c982;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(32, 31, 31, 0.151);
+  top: 0;
+  left: 0;
+}
+
+.modalBox {
+  width: 90%;
+  height: 90%;
+  margin: 5% auto;
+  background-color: white;
+  border-radius: 3px;
+  padding-top: 1%;
+}
+
+.modalBoxInfo {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px;
+}
+
+.modalBoxInfoPoster {
+  margin-right: 10px;
+}
+
+.modalBoxInfoPoster__Image {
+  width: 375px;
+  height: 590px;
+}
+
+.modalBoxInfoText {
+  width: 515px;
+}
+
+.modalBoxInfoTextTitle {
+  background-color: gray;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px;
+  height: 45px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modalBoxInfoTextTitle__Name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modalBoxInfoText__Genre {
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.infoText {
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */
